@@ -16,10 +16,28 @@
         android:textAlignment="center"
         android:textColor="#3F51B5" />
 
+    <EditText
+        android:id="@+id/nicname_edit"
+        style="@style/NameStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/what_is_your_nickname"
+        android:inputType="textPersonName"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/done_button"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/done" />
+
     <ImageView
         android:id="@+id/star_image"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="227dp"
         android:layout_margin="16dp"
         android:contentDescription="@string/yello_star"
         app:srcCompat="@drawable/j1" />
@@ -29,18 +47,18 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/bio_text"
-            style="@style/NameStyle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:lineSpacingMultiplier="1.2"
-            android:orientation="vertical"
-            android:padding="16dp"
-            android:paddingStart="@dimen/layout_margin"
-            android:paddingEnd="@dimen/small_padding"
-            android:text="@string/bio" />
-
+            <TextView
+                android:id="@+id/bio_text"
+                style="@style/NameStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingMultiplier="1.2"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:paddingStart="@dimen/layout_margin"
+                android:paddingEnd="@dimen/small_padding"
+                android:text="@string/bio"
+                android:textColor="#0C0000" />
     </ScrollView>
 
 </LinearLayout>

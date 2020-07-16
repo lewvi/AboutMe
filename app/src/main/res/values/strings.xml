@@ -2,5 +2,8 @@
     <string name="app_name">HelloWorld</string>
     <string name="name">Nutthakul</string>
     <string name="yello_star">yello star</string>
-    <string name="bio">Hello Nutthakul</string>
+    <string name="bio">Hello Nutthakul </string>
+    <string name="what_is_your_nickname">What is your Nickname?</string>
+    <string name="done">Done</string>
+     
 </resources>
