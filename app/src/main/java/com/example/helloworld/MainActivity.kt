@@ -52,7 +52,6 @@ class MainActivity : AppCompatActivity() {
         imm.showSoftInput(editText, 0)
     }
 
-
     private fun clickHandlerFunction(viewThatIsClicked: View) {
 
     }
