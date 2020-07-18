@@ -51,10 +51,10 @@
     <ImageView
         android:id="@+id/star_image"
         android:layout_width="match_parent"
-        android:layout_height="227dp"
+        android:layout_height="153dp"
         android:layout_margin="16dp"
         android:contentDescription="@string/yello_star"
-        app:srcCompat="@drawable/j1" />
+        app:srcCompat="@drawable/fish" />
 
     <ScrollView
         android:id="@+id/bio_scroll"
