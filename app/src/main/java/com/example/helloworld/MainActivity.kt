@@ -8,8 +8,14 @@ import android.view.inputmethod.InputMethodManager
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import androidx.databinding.DataBindingUtil
+import com.example.helloworld.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityMainBinding
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,6 +28,30 @@ class MainActivity : AppCompatActivity() {
         findViewById<TextView>(R.id.nicname_text).setOnClickListener {
             updateNickname(it)
         }
+
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
+
+        binding.doneButton.setOnClickListener {
+            addNickname(it)
+        }
+
+        binding.nicnameText.text = binding.nicnameEdit.text
+        binding.nicnameEdit.visibility = View.GONE
+        binding.doneButton.visibility = View.GONE
+        binding.nicnameText.visibility = View.VISIBLE
+
+        binding.nicnameText.text = binding.nicnameEdit.text.toString()
+
+        binding.apply {
+            nicnameText.text = nicnameEdit.text.toString()
+            nicnameEdit.visibility = View.GONE
+            doneButton.visibility = View.GONE
+            nicnameText.visibility = View.VISIBLE
+        }
+
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
+
+
     }
 
     private fun addNickname(view: View) {
