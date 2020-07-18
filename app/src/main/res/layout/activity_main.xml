@@ -80,7 +80,7 @@
                 android:padding="16dp"
                 android:paddingStart="@dimen/layout_margin"
                 android:paddingEnd="@dimen/small_padding"
-                android:text="@={myName.name}"
+                android:text="@string/bio"
                 android:textColor="#0C0000" />
 
         </ScrollView>
